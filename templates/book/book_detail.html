@@ -1,0 +1,221 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %} 物品管理 {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">物品管理</h5>
+                        </div>
+                        <!-- <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">All Books</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:">{{book.title}}</a></li>
+                        </ul> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-book"></i> 物品详情 : << {{book.title}} >> </h5>
+                            </div>
+
+                <div class="card-block">
+                    <div class="col-md-12">
+                        <!-- <h5 class="mt-2">{{book.title}}</h5> -->
+                        <!-- <hr> -->
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-basic" role="tab" aria-controls="pills-basic" aria-selected="true">物品信息</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">物品描述</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">物品位置</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-record-tab" data-toggle="pill" href="#pills-record" role="tab" aria-controls="pills-record" aria-selected="false">物品租借历史记录</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-comment-tab" data-toggle="pill" href="#pills-comment" role="tab" aria-controls="pills-comments" aria-selected="false">评  价</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- 物品概述 -->
+                            <div class="tab-pane fade show active" id="pills-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class='row'>
+                                    <div class='col-6'>
+                                        <p>物品名称: {{book.title}} </p>
+                                        <p>物品作者: {{book.author}} </p>
+                                        <p>物品分类: {{book.category}} </p>
+                                        <p>物品提供者: {{book.publisher}} </p>
+                                        <p>物品数量: {{book.quantity}} </p>
+                                   
+                                    </div>
+                                    <div class='col-6'>
+                                        <p>物品入库时间: {{book.created_at|date:"Y/m/d H:i"}} </p>
+                                        <p>管理员最近操作信息: <span class="badge badge-secondary">管理员{{book.updated_by}}</span> 于 {{book.updated_at|date:"Y/m/d H:i"}} 进行操作</p>
+                                        <p>租借时间: {{book.total_borrow_times}} </p>
+                                        <p>物品目前所处状况（租借与否）: {{book.get_status_display}} </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 物品描述 -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <p class="mb-0">
+                                    {{book.description}}
+                                </p>
+                            </div>
+                            <!-- 物品位置信息 -->
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class='row'>
+                                    <div class='col-6'>
+                                        <p> 物品所处位置id Id: {{book.floor_number}}{{book.bookshelf_number}}</p>
+                                        <p> 楼层: {{book.get_floor_number_display}} floor </p>
+                                        <p> 物品架子: {{book.bookshelf_number}} </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 租借记录 -->
+                            <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab">
+                             <h5 class='mb-3'>租借历史记录</h5>
+                             {% if related_records %}
+                             <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">租借用户名称</th>
+                                        <th scope="col">用户卡号</th>
+                                        <th scope="col">物品名称</th>
+                                        <th scope="col">租借日期 起 - 止</th>
+                                        <th scope="col">物品状态</th>
+                                        <th scope="col">用户归还物品时间</th>
+                                        <th scope="col">#</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                 {% for record in related_records%}
+                                 <tr>
+                                    <td>{{record.borrower}} </td>
+                                    <td>{{record.borrower_card}}</td>
+                                    <td>{{record.book}}</td>
+                                    <td>{{record.start_day | date:"Y/m/d"}} - {{record.end_day | date:"Y/m/d"}}</td>
+                                    <td>{{record.get_open_or_close_display}}</td>
+                                    <td>{{record.closed_at | date:"Y/m/d"}}</td>
+                                    {% if record.final_status == "Delayed" %}
+                                        <td>{{record.final_status}}, {{record.delay_days}} days</td>
+                                    {% else %}
+                                        <td>{{record.final_status}}</td>
+                                    {% endif %}
+                                  </tr>
+               
+                                {% endfor %}
+
+                                {% else %}
+                                <h4 class="text-center">没有记录</h4>
+                                {% endif  %}
+                                </tbody>
+                              </table>
+
+                            </div>
+
+                            <!-- 物品租借评价 -->
+                            <div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+                                {% if user.is_authenticated %}
+                                <div>
+                                    <form 
+                                        action="{% url 'comment:post_comment' book.id %}" 
+                                        method="POST"
+                                    >
+                                    {% csrf_token %}
+                                        <div class="form-group">
+                                            <label for="body">
+                                                <strong>
+                                                    请做出你的评价吧:
+                                                </strong>
+                                            </label>
+
+                                                <div>
+                                                    {{ comment_form.media }}
+                                                    {{ comment_form.body }}
+                                                </div>
+                                        </div>
+
+                                        <!-- 提交按钮 -->
+                                        <button type="submit" class="btn btn-success ">上传评价</button>
+                                    </form>
+                                </div>
+                                <br>
+                            {% else %}
+                                <br>
+                                <h5 class="row justify-content-center">
+                                    请登录<a href="{% url 'login' %}">登录</a>to reply
+                                </h5>
+                                <br>
+                            {% endif %}
+
+
+                            <h4>总共 {{ comments.count }} 条评价</h4>
+                            <div>
+                                {% for comment in comments %}
+                                    <hr>
+                                    <p>
+                                        <strong style="color: rgb(175, 31, 55)">
+                                            {{ comment.user }} 
+                                        </strong>  
+                                        评价于
+                                        <span style="color: green">
+                                             {{ comment.created_at|date:"Y/m/d H:i" }}
+                                        </span> :
+                                    </p>
+                                    <p>{{ comment.body|safe }}</p>
+
+                                {% endfor %}
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <a href="{% url 'book_list' %}" class='btn btn-dark'>返回物品列表</a>
+                <a href="{% url 'book_update' book.id %}" class='btn btn-primary'>更新一下</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script>
+    $(".django-ckeditor-widget").removeAttr('style');
+</script>
+
+{% endblock javascripts %}

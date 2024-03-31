@@ -1,0 +1,1402 @@
+2021-12-26 12:56:02,180 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2021-12-26 12:56:33,191 django.request 222 WARNING  Not Found: /favicon.ico
+2021-12-26 13:50:24,114 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-02-27 09:33:12,933 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-04 09:59:15,094 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-04 10:52:20,667 django.security.csrf 222 WARNING  Forbidden (CSRF token missing or incorrect.): /auth/login/
+2024-03-04 10:52:20,910 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-04 10:54:11,105 django.security.csrf 222 WARNING  Forbidden (CSRF token missing or incorrect.): /auth/login/
+2024-03-04 10:54:32,187 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-04 10:54:40,488 django.security.csrf 222 WARNING  Forbidden (CSRF token missing or incorrect.): /auth/login/
+2024-03-05 14:40:18,861 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-06 14:37:01,320 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-06 14:38:27,596 django.request 222 WARNING  Not Found: /tables/
+2024-03-06 14:41:33,011 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-08 16:01:27,903 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-08 16:02:32,835 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-08 16:02:35,058 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-08 16:05:41,588 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-16 15:25:49,997 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-16 15:32:31,295 book.views   220 INFO     Book  <<Best Book>> retrieved from db
+2024-03-17 16:03:22,828 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 16:09:35,922 book.views   329 INFO     2279047712 created Category 李博
+2024-03-17 16:09:58,372 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-17 16:09:59,246 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 16:22:52,782 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-17 16:22:54,141 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 16:31:50,282 book.views   337 INFO     2279047712 created Category 222
+2024-03-17 18:03:56,344 django.request 222 ERROR    Internal Server Error: /category-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search_category' not found. 'search_category' is not a valid view function or pattern name.
+2024-03-17 18:03:56,658 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-17 20:56:52,300 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 20:57:36,267 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 20:57:47,849 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 20:59:18,194 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 20:59:20,328 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 20:59:36,550 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:00:32,168 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-17 21:00:33,051 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:00:37,856 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:01:34,296 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-17 21:01:35,468 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:01:36,452 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:01:48,301 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:01:48,414 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-17 21:01:49,920 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:01:51,012 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:02:01,723 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-17 21:02:02,866 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:02:04,102 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:04:25,684 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:05:06,850 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:07:07,663 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-17 21:07:09,607 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:09:10,360 django.request 222 WARNING  Not Found: /home
+2024-03-17 21:09:24,362 django.request 222 WARNING  Not Found: /[name='home']
+2024-03-17 21:09:59,666 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:10:36,670 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:11:53,669 django.request 222 WARNING  Not Found: /login
+2024-03-17 21:12:07,439 django.request 222 WARNING  Not Found: /login
+2024-03-17 21:12:18,059 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:13:36,759 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:13:37,892 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:14:48,270 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:17:59,936 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-17 21:18:01,123 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:18:01,949 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:18:06,639 django.request 222 WARNING  Not Found: /home/
+2024-03-17 21:20:41,262 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:20:44,348 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:21:46,369 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:21:51,865 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:27:27,360 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-17 21:27:29,224 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:29:26,239 django.request 222 WARNING  Not Found: /auth/home
+2024-03-17 21:29:44,689 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:29:49,892 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-17 21:31:16,284 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-18 11:58:50,071 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 11:58:59,693 django.request 222 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\book\views.py", line 81, in get
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\book\views.py", line 81, in <dictcomp>
+    user_avatar = { e.created_by:Profile.objects.get(user__username=e.created_by).profile_pic.url for e in user_activities}
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Profile.DoesNotExist: Profile matching query does not exist.
+2024-03-18 15:05:55,329 django.request 222 WARNING  Not Found: /record-create/
+2024-03-18 20:51:33,720 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 20:51:34,739 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 20:55:46,315 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 20:55:47,317 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 20:56:15,806 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 20:56:16,745 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:00:34,616 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:00:35,484 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:00:46,216 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:00:46,978 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:10:03,143 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:26:06,664 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:26:07,497 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:27:06,029 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:27:06,808 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:27:14,336 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:27:15,137 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:27:22,751 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:27:23,675 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:28:53,009 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-18 21:28:53,866 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-18 21:39:25,030 django.request 222 WARNING  Not Found: /profile_detail
+2024-03-19 11:16:08,017 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 11:21:11,244 django.request 222 WARNING  Not Found: /book-updata
+2024-03-19 11:21:11,397 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-19 11:21:22,015 django.request 222 WARNING  Not Found: /book-updata/1
+2024-03-19 11:21:42,746 django.request 222 WARNING  Not Found: /book-updata/1/book-updata
+2024-03-19 11:21:52,766 django.request 222 WARNING  Not Found: /book-updata
+2024-03-19 12:02:18,078 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-19 12:02:19,793 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 12:14:41,484 django.security.csrf 222 WARNING  Forbidden (CSRF token missing or incorrect.): /global-search/
+2024-03-19 12:16:45,483 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\urls.py changed, reloading.
+2024-03-19 12:16:46,309 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 12:18:53,885 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-19 12:18:54,954 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 12:19:12,621 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-19 12:19:13,865 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 12:19:24,295 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\urls.py changed, reloading.
+2024-03-19 12:19:25,153 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 15:20:17,068 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-19 15:20:19,741 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 15:43:03,048 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-19 15:51:29,415 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-19 15:51:30,518 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:39:39,609 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:39:41,410 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:40:34,511 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:40:35,853 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:41:49,332 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-19 19:41:50,553 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:42:13,490 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-19 19:42:15,543 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:42:55,570 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:42:56,815 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:43:06,334 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:43:07,486 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:43:17,092 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:43:18,356 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:43:25,301 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:43:26,487 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:43:38,507 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:43:40,112 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:44:29,077 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-19 19:44:30,723 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:45:18,282 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-19 19:45:19,377 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:45:28,122 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-19 19:45:29,253 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-19 19:46:58,633 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-19 19:46:59,439 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 11:39:49,232 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 11:46:06,811 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 11:46:08,006 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 11:46:31,244 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 11:46:33,028 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 15:29:20,651 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 15:29:22,051 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 16:51:39,603 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 16:53:09,696 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 16:58:40,929 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:01:31,523 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:04:49,970 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:06:28,186 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:07:52,524 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:07:58,362 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:08:44,271 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:08:53,376 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:22:08,869 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:22:18,162 book.views   215 INFO     Book  <<Best Book>> retrieved from db
+2024-03-20 17:25:24,956 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:25:25,963 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:27:11,059 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:27:11,917 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:27:30,623 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:27:31,319 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:27:33,726 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:27:34,487 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:27:44,946 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:27:45,630 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:27:59,475 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:28:00,267 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:28:56,082 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:28:56,957 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:29:49,014 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:29:49,887 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:30:32,996 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:30:33,878 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 17:32:24,918 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 17:32:25,727 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:11:39,082 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:11:40,540 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:12:05,256 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:12:06,236 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:18:33,747 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:18:34,762 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:20:14,769 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:20:16,537 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:20:48,510 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:20:49,444 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:21:58,640 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:21:59,799 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:22:12,602 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:22:13,583 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:23:24,577 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:23:25,841 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:23:44,004 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:23:44,975 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:33:15,511 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-20 20:33:17,399 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:33:45,326 book.views   332 INFO     2279047712 created Category 岳阳海月公主
+2024-03-20 20:37:38,460 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:37:39,826 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:37:54,289 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:37:56,233 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:38:32,035 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:38:34,816 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:39:46,864 book.views   332 INFO     2279047712 created Category 游戏账号
+2024-03-20 20:40:41,121 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:40:42,607 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:40:54,825 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:40:56,546 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:41:09,420 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:41:10,455 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:42:08,324 book.views   215 INFO     Book  <<英雄联盟账号>> retrieved from db
+2024-03-20 20:43:30,713 book.views   215 INFO     Book  <<英雄联盟账号>> retrieved from db
+2024-03-20 20:43:47,593 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:43:49,157 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:44:00,721 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:44:01,736 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:44:18,501 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:44:20,534 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:46:35,309 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:46:36,317 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:46:55,707 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:46:57,011 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:47:24,406 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:47:25,835 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:48:03,324 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:48:04,425 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:48:39,908 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:48:41,299 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:49:02,725 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:49:03,958 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:49:11,648 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:49:12,736 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:51:40,642 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:51:42,003 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:51:52,579 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:51:54,021 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 20:52:27,771 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-20 20:52:29,429 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-20 23:08:11,094 django.request 222 ERROR    Internal Server Error: /record-create/
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: CHECK constraint failed: quantity
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "E:\bishe1\Library-main\book\views.py", line 732, in form_valid
+    selected_book.save()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 740, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 777, in save_base
+    updated = self._save_table(
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 850, in _save_table
+    updated = self._do_update(base_qs, using, pk_val, values, update_fields,
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\sql\compiler.py", line 1462, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\sql\compiler.py", line 1133, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 80, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: CHECK constraint failed: quantity
+2024-03-20 23:12:05,573 book.views   215 INFO     Book  <<英雄联盟账号>> retrieved from db
+2024-03-21 00:26:16,047 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 00:26:17,963 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 07:45:37,564 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-21 07:45:38,469 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 07:46:34,468 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-21 07:46:35,292 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 07:48:05,349 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 07:48:06,305 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 07:48:31,003 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 07:48:32,020 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 08:01:44,082 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 08:01:47,192 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 08:23:04,286 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-21 08:23:05,110 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 08:23:34,804 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-21 08:23:35,542 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 08:36:39,321 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 08:41:49,497 django.request 222 ERROR    Internal Server Error: /category-create
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'
+2024-03-21 10:30:28,756 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-21 10:30:30,469 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 10:32:53,958 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 10:32:55,743 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 10:34:52,133 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 10:34:53,125 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 21:00:18,428 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 21:19:31,004 book.views   215 INFO     Book  <<英雄联盟账号>> retrieved from db
+2024-03-21 21:20:33,348 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-21 21:40:12,266 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-21 21:40:16,707 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 21:46:26,640 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\urls.py changed, reloading.
+2024-03-21 21:46:29,533 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-21 23:13:03,479 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-22 16:14:31,207 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-22 16:14:33,388 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-22 16:31:23,034 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\forms.py changed, reloading.
+2024-03-22 16:31:26,897 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-23 16:49:59,283 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-23 16:50:22,467 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-23 16:51:47,951 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-23 16:51:49,439 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-23 16:53:39,543 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-23 16:55:04,596 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-23 16:58:45,716 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-23 16:59:00,741 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-23 16:59:26,685 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-23 17:02:47,896 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-23 17:47:59,156 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-24 10:57:23,810 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 10:57:34,092 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-24 11:01:08,662 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\groups_permissions.py changed, reloading.
+2024-03-24 11:01:09,574 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:01:16,091 django.request 222 ERROR    Internal Server Error: /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 32, in wrapper_func
+    group = request.user.groups.all().name
+AttributeError: 'QuerySet' object has no attribute 'name'
+2024-03-24 11:01:16,357 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-24 11:02:52,042 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\groups_permissions.py changed, reloading.
+2024-03-24 11:02:52,961 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:06:12,313 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-24 11:06:13,417 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:06:17,353 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-24 11:06:18,236 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:07:38,099 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-24 11:07:39,499 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:22:14,577 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-24 11:22:15,689 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:23:51,902 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\groups_permissions.py changed, reloading.
+2024-03-24 11:23:52,922 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 11:23:53,706 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-24 11:54:43,422 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 11:54:44,873 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 12:03:42,597 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 12:03:43,832 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 12:04:53,197 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 12:04:54,274 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:04:49,899 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:04:51,547 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:05:53,612 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-24 14:06:28,396 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:06:31,742 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:07:27,046 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:07:28,926 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:07:49,829 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:07:51,256 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:11:29,764 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:11:31,016 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:20:22,068 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:20:24,177 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 14:22:39,556 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-24 14:22:42,802 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 15:18:49,717 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-24 15:18:50,741 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-24 17:35:56,716 django.request 222 WARNING  Not Found: /book/member_detail.html
+2024-03-24 17:36:03,555 django.request 222 WARNING  Not Found: /book/member-detail.html
+2024-03-24 17:36:07,503 django.request 222 WARNING  Not Found: /book/member-detail
+2024-03-25 10:53:01,571 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 10:56:31,846 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-25 10:56:32,711 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:01:13,782 django.request 222 ERROR    Internal Server Error: /record-detail/63/
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "E:\bishe1\Library-main\book\views.py", line 788, in get_context_data
+    related_member = Member.objects.get(name=self.get_object().borrower)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Member.DoesNotExist: Member matching query does not exist.
+2024-03-25 11:01:13,998 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-25 11:01:34,191 django.request 222 ERROR    Internal Server Error: /record-detail/58/
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "E:\bishe1\Library-main\book\views.py", line 788, in get_context_data
+    related_member = Member.objects.get(name=self.get_object().borrower)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book.models.Member.DoesNotExist: Member matching query does not exist.
+2024-03-25 11:04:01,587 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\models.py changed, reloading.
+2024-03-25 11:04:02,448 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:11:56,135 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:11:57,458 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:13:12,599 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:13:13,540 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:13:19,496 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:13:20,340 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:13:42,059 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:13:42,845 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:16:26,915 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:16:28,345 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:16:44,749 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:16:46,225 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:22:03,051 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 11:22:04,001 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:25:08,833 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 11:26:29,731 book.views   215 INFO     Book  <<劳大永不坠机>> retrieved from db
+2024-03-25 11:26:59,024 book.views   215 INFO     Book  <<劳大永不坠机>> retrieved from db
+2024-03-25 11:27:21,038 book.views   332 INFO     2279047712 created Category 日常物品
+2024-03-25 11:39:51,029 book.views   215 INFO     Book  <<直升机二号>> retrieved from db
+2024-03-25 11:40:02,537 book.views   215 INFO     Book  <<直升机二号>> retrieved from db
+2024-03-25 20:12:23,981 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 22:12:14,221 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 22:12:16,466 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 22:13:39,852 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 22:13:43,007 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-25 23:00:16,008 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-25 23:00:19,241 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-26 14:54:12,426 django.request 222 WARNING  Not Found: /favicon.ico
+2024-03-26 17:30:51,522 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-26 17:31:41,915 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-26 19:52:17,404 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-26 19:52:35,624 book.views   216 INFO     Book  <<直升机二号>> retrieved from db
+2024-03-26 22:37:50,947 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 00:44:51,300 django.request 222 WARNING  Forbidden (Permission denied): /user-activity-list
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\bishe1\Library-main\book\groups_permissions.py", line 37, in wrapper_func
+    raise PermissionDenied("You do not have permission to access this Page")
+django.core.exceptions.PermissionDenied: You do not have permission to access this Page
+2024-03-27 01:43:25,079 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\forms.py changed, reloading.
+2024-03-27 01:43:26,335 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 01:43:30,618 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\forms.py changed, reloading.
+2024-03-27 01:43:31,805 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 01:45:46,491 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\views.py changed, reloading.
+2024-03-27 01:45:47,805 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 01:46:02,346 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\views.py changed, reloading.
+2024-03-27 01:46:03,683 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 01:46:20,679 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\views.py changed, reloading.
+2024-03-27 01:46:22,050 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 01:48:49,495 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\views.py changed, reloading.
+2024-03-27 01:48:50,511 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 01:49:17,033 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\authentication\views.py changed, reloading.
+2024-03-27 01:49:18,635 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 02:49:57,824 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\core\settings.py changed, reloading.
+2024-03-27 02:49:58,776 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 07:52:10,827 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-27 07:52:12,783 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 08:21:51,157 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-27 08:21:52,379 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 08:21:59,647 django.utils.autoreload 217 INFO     E:\bishe1\Library-main\book\views.py changed, reloading.
+2024-03-27 08:22:00,666 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-27 08:25:51,856 book.views   216 INFO     Book  <<吹风机>> retrieved from db
+2024-03-27 10:13:23,151 django.request 222 WARNING  Not Found: /record-create/
+2024-03-27 10:14:48,847 django.request 222 ERROR    Internal Server Error: /record-create/
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: CHECK constraint failed: quantity
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "E:\bishe1\Library-main\book\views.py", line 735, in form_valid
+    selected_book.save()
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 740, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 777, in save_base
+    updated = self._save_table(
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 850, in _save_table
+    updated = self._do_update(base_qs, using, pk_val, values, update_fields,
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\sql\compiler.py", line 1462, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\models\sql\compiler.py", line 1133, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 80, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\bishe1\Library-main\envname\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: CHECK constraint failed: quantity
+2024-03-27 10:29:48,446 book.views   216 INFO     Book  <<不儿>> retrieved from db
+2024-03-29 12:30:16,593 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader
+2024-03-31 20:28:17,635 django.utils.autoreload 597 INFO     Watching for file changes with StatReloader

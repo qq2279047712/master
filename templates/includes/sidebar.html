@@ -1,0 +1,147 @@
+{% load book_extras %}
+    <nav class="pcoded-navbar">
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a target="_blank" 
+                   href="" class="b-brand">
+                    <div class="b-bg">
+                        <i class="feather icon-trending-up"></i>
+                    </div>
+                    <span class="b-title">闲置物品租借系统</span>
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
+            </div>
+            <div class="navbar-content scroll-div">
+                <ul class="nav pcoded-inner-navbar">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>主页</label>
+                    </li>
+                    <li 
+                        class="nav-item {% if 'index' in segment %} active {% endif %}">
+                        <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">首页</span></a>
+                    </li>
+                    <li 
+                        class="nav-item {% if request.resolver_match.url_name == 'chart' %} active {% endif %}">
+                        <a href="{% url 'chart' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">图表</span></a>
+                    </li>
+                    
+                    <!-- 租借表 -->
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>租借模块</label>
+                    </li>
+                    <li class="nav-item {% if request.resolver_match.url_name == 'record_list' %} active {% endif %}">
+                        <a href="{% url 'record_list' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">租借记录</span></a>
+                    </li>
+
+                    <li   class="nav-item {% if request.resolver_match.url_name == 'record_create' %} active {% endif %}">
+                    <a href="{% url 'record_create' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">借取物品</span></a>
+                </li>
+
+                    <!-- 物品管理 -->
+
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>管理模块</label>
+                    </li>
+                    <li class="nav-item pcoded-hasmenu {% if request.resolver_match.url_name == 'book_list' or request.resolver_match.url_name == 'book_create' or request.resolver_match.url_name == 'book_update' or request.resolver_match.url_name == 'book_delete' or request.resolver_match.url_name == 'book_detail' %} active pcoded-trigger {% endif %}">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">物品管理</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="{% url 'book_list' %}" class="">物品详情</a></li>
+                            <li class=""><a href="{% url 'book_create' %}" class="">添加闲置物品</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 分类管理 -->
+                    {% url 'category_list' as category_list %}
+                    {% url 'category_create' as category_create %}
+                    {% url 'category_delete' as category_delete %}
+                    <li class="nav-item pcoded-hasmenu {% if request.path == category_list or request.path == category_create or  request.path == category_delete %} active pcoded-trigger {% endif %}">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">类别模块</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="{% url 'category_list' %}" class="">所有物品分类</a></li>
+                            <li class=""><a href="{% url 'category_create' %}" class="">添加物品分类</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 提供者管理 -->
+
+                    <li class="nav-item pcoded-hasmenu {% if request.resolver_match.url_name == 'publisher_list' or request.resolver_match.url_name == 'publisher_create' or request.resolver_match.url_name == 'publisher_update' or request.resolver_match.url_name == 'publisher_delete' %} active pcoded-trigger {% endif %}">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">物品提供者模块</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="{% url 'publisher_list' %}" >所有提供者</a></li>
+                            <li class=""><a href="{% url 'publisher_create' %}" >添加新的提供者</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!-- 用户管理 -->
+                    <li class="nav-item pcoded-hasmenu {% if request.resolver_match.url_name == 'member_list' or request.resolver_match.url_name == 'member_create' or request.resolver_match.url_name == 'member_update' or request.resolver_match.url_name == 'member_delete' or request.resolver_match.url_name == 'member_detail' %} active pcoded-trigger {% endif %}">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">客户管理模块</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="{% url 'member_list' %}" class="">客户表</a></li>
+                            <li class=""><a href="{% url 'member_create' %}" class="">添加客户</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 用户日志 -->
+   
+                    {% url 'profile_create' as profile_create %}
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>个人中心</label>
+                    </li>
+                    {% if request.user.profile.id %}
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'profile_detail' %} active  {% endif %}">
+                        <a href="{% url 'profile_detail' request.user.profile.id %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">我的资料</span></a>
+                    </li>
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'profile_update' %} active {% endif %}">
+                        <a href="{% url 'profile_update' request.user.profile.pk %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">更新资料</span></a>
+                    </li>
+                    {% else %}
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'profile_create' %} active  {% endif %}">
+                        <a href="{% url 'profile_create' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">创建个人资料</span></a>
+                    </li>
+
+                    {% endif %}
+
+
+                    {% if request.user|has_group:"logs" %}
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'user_activity_list' %} active {% endif %} {% if request.resolver_match.url_name == 'user_activity_delete' %} active {% endif %}">
+                        <a href="{% url 'user_activity_list' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">日志</span></a>
+                    </li>
+                    {% endif %}
+
+                    {% if request.user|has_group:"download_data" %}
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'data_center' %} active {% endif %}">
+                        <a href="{% url 'data_center' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">数据中心</span></a>
+                    </li>
+                    {% endif %}
+
+                    
+                    {% if request.user|has_group:"api" %}
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'api-overview' %} active {% endif %}">
+                        <a href="{% url 'api-overview' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">API</span></a>
+                    </li>
+                    {% endif %}
+
+                    {% if request.user.is_superuser %}
+                    <li  class="nav-item {% if request.resolver_match.url_name == 'employees_list' %} active {% endif %}">
+                        <a href="{% url 'employees_list' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">管理员管理</span></a>
+                    </li>
+                    {% endif %}
+
+                    <!-- Form Table -->
+                    <!-- <li class="nav-item pcoded-menu-caption">
+                        <label>Forms & table</label>
+                    </li>
+                    <li data-username="form elements advance componant validation masking wizard picker select" 
+                        class="nav-item {% if 'ui-forms' in segment %} active {% endif %}">
+                        <a href="/ui-forms.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Form elements</span></a>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" 
+                        class="nav-item {% if 'ui-tables' in segment %} active {% endif %}">
+                        <a href="/ui-tables.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-server"></i></span><span class="pcoded-mtext">Table</span></a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
